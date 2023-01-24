@@ -4,7 +4,7 @@ const stub = ClarifaiStub.grpc();
 
 // This will be used by every Clarifai endpoint call
 const metadata = new grpc.Metadata();
-metadata.set("authorization", "Key e1c6eac4bc574fcaaddf393f28776a27");
+metadata.set("authorization", "Key " + {YOUR_PERSONAL_TOKEN});
 
 const handleApiCall = (req, res) => {
 	stub.PostModelOutputs(
